@@ -12,7 +12,7 @@
 
 ## About this App
 
-simple whatsUpp
+simple whatsApp
 
 ## The technology used 
 
