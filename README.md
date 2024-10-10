@@ -1,16 +1,18 @@
-# chat_app1
+# 📘 Overview
 
-A new Flutter project.
+![c1](https://github.com/user-attachments/assets/aa0d1176-602a-4414-b1dc-6c16b067f7ea)
+![c2](https://github.com/user-attachments/assets/4f07ebb5-3e0c-4397-b568-d2fb2e22815a)
+![c3](https://github.com/user-attachments/assets/1d823110-0b88-4ce0-9585-32e4946b55c7)
+![c4](https://github.com/user-attachments/assets/1e91f773-1ba7-4551-9d0b-3b77546fb329)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## About this App
+
+simple whatsUpp
+
+## The technology used 
+
