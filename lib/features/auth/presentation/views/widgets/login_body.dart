@@ -1,11 +1,11 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:chat_app1/core/constants/app_assets.dart';
 import 'package:chat_app1/core/shared_widgets/custom_button.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
-import 'package:chat_app1/features/auth/presentation/widgets/donot_have_account.dart';
-import 'package:chat_app1/features/auth/presentation/widgets/email_field.dart';
-import 'package:chat_app1/features/auth/presentation/widgets/password_field.dart';
+import 'package:chat_app1/features/auth/presentation/views/signup.dart';
+import 'package:chat_app1/features/auth/presentation/views/widgets/donot_have_account.dart';
+import 'package:chat_app1/features/auth/presentation/views/widgets/email_field.dart';
+import 'package:chat_app1/features/auth/presentation/views/widgets/password_field.dart';
+import 'package:chat_app1/features/home/presentation/view/home.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatelessWidget {
@@ -42,7 +42,7 @@ class LoginBody extends StatelessWidget {
                 EmailField(
                   emailController: emailController,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 PasswordField(
@@ -51,18 +51,30 @@ class LoginBody extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                CustomButton(title: "Log In",
-                onTap: (){
-                  if(key.currentState!.validate()){
-
-                  }else{
-
-                  }
-                },),
+                CustomButton(
+                  title: "Log In",
+                  onTap: () {
+                    if (key.currentState!.validate()) {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Home(),
+                          ));
+                    } else {}
+                  },
+                ),
                 const SizedBox(
                   height: 30,
                 ),
-                DonotHaveAccount(),
+                DonotHaveAccount(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Signup(),
+                        ));
+                  },
+                ),
               ],
             ),
           ),
