@@ -1,10 +1,12 @@
 import 'package:chat_app1/core/theme/app_styles.dart';
+import 'package:chat_app1/features/home/presentation/views/widgets/custom_button_more.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
   final Widget? icon;
   final String title;
-  const CustomAppBar({super.key, required this.title,this.icon});
+  final void Function()? onPressed;
+  const CustomAppBar({super.key, required this.title,this.icon, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +20,11 @@ class CustomAppBar extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        const Icon(Icons.search),
-        const SizedBox(width: 16,),
-        const Icon(Icons.more_vert_outlined),
+        const Icon(Icons.search,),
+        const SizedBox(width: 8,),
+        const CustomButtonMore(),
       ],
     );
+    
   }
 }

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class CustomRowStatus extends StatelessWidget {
   final String title1;
   final String title2;
-  final IconData? icon;
+  final Widget? icon;
   final Widget? widget;
   final double? vertical;
   const CustomRowStatus(
