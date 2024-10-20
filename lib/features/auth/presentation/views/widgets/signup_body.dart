@@ -7,7 +7,7 @@ import 'package:chat_app1/features/auth/presentation/views/widgets/have_an_accou
 import 'package:chat_app1/features/auth/presentation/views/widgets/name_field.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/password_field.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/phone_field.dart';
-import 'package:chat_app1/features/home/presentation/view/home.dart';
+import 'package:chat_app1/features/home/presentation/views/home.dart';
 import 'package:flutter/material.dart';
 
 class SignupBody extends StatelessWidget {

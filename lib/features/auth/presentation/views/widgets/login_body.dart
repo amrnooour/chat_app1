@@ -5,7 +5,7 @@ import 'package:chat_app1/features/auth/presentation/views/signup.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/donot_have_account.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/email_field.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/password_field.dart';
-import 'package:chat_app1/features/home/presentation/view/home.dart';
+import 'package:chat_app1/features/home/presentation/views/home.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatelessWidget {
