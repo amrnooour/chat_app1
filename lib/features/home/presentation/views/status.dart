@@ -1,3 +1,4 @@
+import 'package:chat_app1/features/home/presentation/views/widgets/status_body.dart';
 import 'package:flutter/material.dart';
 
 class Status extends StatelessWidget {
@@ -5,6 +6,8 @@ class Status extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: StatusBody(),
+    );
   }
 }

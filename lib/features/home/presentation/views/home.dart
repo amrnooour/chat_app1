@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
           body: TabsOfBottomNav.tabs[context.read<HomeCubit>().currentIndex],
           bottomNavigationBar: const CustomBottomNav(),
           appBar: AppBar(
+            elevation: 0,
             title: const CustomAppBar(title: "WhatsUp"),
           ),
           floatingActionButton: const CustomFloatingButton(),
