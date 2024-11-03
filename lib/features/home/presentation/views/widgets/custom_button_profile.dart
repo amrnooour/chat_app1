@@ -1,6 +1,7 @@
 import 'package:chat_app1/core/theme/app_colors.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButtonProfile extends StatelessWidget {
   final String title;
@@ -14,7 +15,7 @@ class CustomButtonProfile extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Container(
-          height: 70,
+          height: 70.h,
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(32),
@@ -26,13 +27,13 @@ class CustomButtonProfile extends StatelessWidget {
                 Icons.save,
                 color: Colors.white,
               ),
-              const SizedBox(
-                width: 12,
+              SizedBox(
+                width: 12.w,
               ),
               Text(
                 title,
                 style: AppStyles.size32Weight700black
-                    .copyWith(fontSize: 18, color: Colors.white),
+                    .copyWith(fontSize: 18.sp, color: Colors.white),
               ),
             ],
           ),

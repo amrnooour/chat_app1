@@ -2,6 +2,7 @@ import 'package:chat_app1/core/constants/app_assets.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
 import 'package:chat_app1/features/auth/presentation/views/login.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -32,10 +33,10 @@ class _SplashState extends State<Splash> {
           children: [
             Image.asset(
               AppAssets.logo,
-              height: 250,
-              width: 250,
+              height: 250.h,
+              width: 250.w,
             ),
-            const Text(
+            Text(
               "Welcome to chat App",
               style: AppStyles.size24Weight600green,
             )

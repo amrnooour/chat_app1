@@ -1,6 +1,7 @@
 import 'package:chat_app1/core/theme/app_styles.dart';
 import 'package:chat_app1/features/home/presentation/views/widgets/custom_button_more.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatelessWidget {
   final Widget? icon;
@@ -13,7 +14,7 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         icon??const Text(""),
-        const SizedBox(width: 44,),
+        SizedBox(width: 44.w,),
         Text(
           title,
           style: AppStyles.size32Weight700black.copyWith(fontWeight: FontWeight.w400
@@ -21,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
         ),
         const Spacer(),
         const Icon(Icons.search,),
-        const SizedBox(width: 8,),
+        SizedBox(width: 8.w,),
         const CustomButtonMore(),
       ],
     );

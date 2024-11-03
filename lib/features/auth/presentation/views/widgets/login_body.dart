@@ -7,6 +7,7 @@ import 'package:chat_app1/features/auth/presentation/views/widgets/email_field.d
 import 'package:chat_app1/features/auth/presentation/views/widgets/password_field.dart';
 import 'package:chat_app1/features/home/presentation/views/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({super.key});
@@ -20,7 +21,7 @@ class LoginBody extends StatelessWidget {
     return SafeArea(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
+          padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 60.h),
           child: Form(
             key: key,
             child: Column(
@@ -29,27 +30,27 @@ class LoginBody extends StatelessWidget {
               children: [
                 Image.asset(
                   AppAssets.logo,
-                  width: 250,
-                  height: 200,
+                  width: 250.w,
+                  height: 200.h,
                 ),
-                const Text(
+                Text(
                   "Log in to your account",
                   style: AppStyles.size32Weight700black,
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 EmailField(
                   emailController: emailController,
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 PasswordField(
                   passwordController: passwordController,
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 CustomButton(
                   title: "Log In",
@@ -63,8 +64,8 @@ class LoginBody extends StatelessWidget {
                     } else {}
                   },
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 DonotHaveAccount(
                   onTap: () {

@@ -9,6 +9,7 @@ import 'package:chat_app1/features/auth/presentation/views/widgets/password_fiel
 import 'package:chat_app1/features/auth/presentation/views/widgets/phone_field.dart';
 import 'package:chat_app1/features/home/presentation/views/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignupBody extends StatelessWidget {
   const SignupBody({super.key});
@@ -23,7 +24,7 @@ class SignupBody extends StatelessWidget {
     return SafeArea(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
+          padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 60.h),
           child: Form(
             key: key,
             child: Column(
@@ -32,38 +33,38 @@ class SignupBody extends StatelessWidget {
               children: [
                 Image.asset(
                   AppAssets.logo,
-                  width: 250,
-                  height: 200,
+                  width: 250.w,
+                  height: 200.h,
                 ),
                 Center(
                   child: Text(
                     "Register To New Account",
                     style:
-                        AppStyles.size32Weight700black.copyWith(fontSize: 24),
+                        AppStyles.size32Weight700black.copyWith(fontSize: 24.sp),
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 NameField(nameController: nameController),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 EmailField(
                   emailController: emailController,
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 PhoneField(phoneController: phoneController),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 PasswordField(
                   passwordController: passwordController,
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 CustomButton(
                   title: "Sign up",
@@ -77,8 +78,8 @@ class SignupBody extends StatelessWidget {
                     } else {}
                   },
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 HaveAnAccount(
                   onTap: () {

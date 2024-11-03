@@ -1,5 +1,6 @@
 import 'package:chat_app1/core/constants/app_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomProfileImage extends StatelessWidget {
   final double? radius;
@@ -27,8 +28,8 @@ class CustomProfileImage extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: Container(
-                height: height?? 20,
-                width: width?? 20,
+                height: height?? 20.h,
+                width: width?? 20.w,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     border: Border.all(color: Colors.green, width: 2),

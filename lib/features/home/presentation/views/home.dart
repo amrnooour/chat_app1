@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             elevation: 0,
             title: const CustomAppBar(
+              icon: Text(""),
               title: "WhatsUp",
             ),
           ),

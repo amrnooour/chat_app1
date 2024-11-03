@@ -1,6 +1,7 @@
 import 'package:chat_app1/core/theme/app_colors.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   final String title;
@@ -19,7 +20,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
             child: Text(
               title,
-              style: AppStyles.size32Weight700black.copyWith(fontSize: 24),
+              style: AppStyles.size32Weight700black.copyWith(fontSize: 24.sp),
             )),
       ),
     );

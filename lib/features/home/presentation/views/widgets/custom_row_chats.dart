@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomRowChats extends StatelessWidget {
   final String title1;
@@ -14,7 +15,7 @@ class CustomRowChats extends StatelessWidget {
         children: [
           Text(
             title1,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
+            style: TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w400),
           ),
           Text(title2,
               style:
@@ -24,10 +25,10 @@ class CustomRowChats extends StatelessWidget {
       trailing: Column(
         children: [
           Text("${DateTime.now().hour.toString()}:00 pm"),
-          const SizedBox(height: 8,),
+          SizedBox(height: 8.h,),
           Container(
-            height: 30,
-            width: 30,
+            height: 30.h,
+            width: 30.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), color: Colors.green),
             child: const Center(child: Text("2",style: TextStyle(color: Colors.white),)),
