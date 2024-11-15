@@ -1,4 +1,4 @@
-import 'package:chat_app1/features/home/presentation/views/profile.dart';
+import 'package:chat_app1/features/profile/presentation/views/profile.dart';
 import 'package:flutter/material.dart';
 
 class CustomButtonMore extends StatelessWidget {

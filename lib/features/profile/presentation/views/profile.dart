@@ -1,5 +1,5 @@
 import 'package:chat_app1/core/theme/app_styles.dart';
-import 'package:chat_app1/features/home/presentation/views/widgets/profile_body.dart';
+import 'package:chat_app1/features/profile/presentation/views/widgets/profile_body.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {

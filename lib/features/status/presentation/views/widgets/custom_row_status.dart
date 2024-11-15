@@ -1,5 +1,5 @@
 import 'package:chat_app1/core/theme/app_styles.dart';
-import 'package:chat_app1/features/home/presentation/views/widgets/custom_profile_image.dart';
+import 'package:chat_app1/features/profile/presentation/views/widgets/custom_profile_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

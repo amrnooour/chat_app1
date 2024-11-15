@@ -1,4 +1,4 @@
-import 'package:chat_app1/features/home/presentation/views/widgets/status_body.dart';
+import 'package:chat_app1/features/status/presentation/views/widgets/status_body.dart';
 import 'package:flutter/material.dart';
 
 class Status extends StatelessWidget {
