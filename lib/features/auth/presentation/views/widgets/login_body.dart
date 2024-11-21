@@ -5,7 +5,6 @@ import 'package:chat_app1/core/shared_widgets/custom_button.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
 import 'package:chat_app1/features/auth/presentation/view_model/auth_cubit.dart';
 import 'package:chat_app1/features/auth/presentation/view_model/auth_states.dart';
-import 'package:chat_app1/features/auth/presentation/views/signup.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/donot_have_account.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/email_field.dart';
 import 'package:chat_app1/features/auth/presentation/views/widgets/password_field.dart';

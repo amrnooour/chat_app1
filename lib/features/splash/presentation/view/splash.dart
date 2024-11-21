@@ -2,7 +2,6 @@ import 'package:chat_app1/core/constants/app_assets.dart';
 import 'package:chat_app1/core/router/navigation.dart';
 import 'package:chat_app1/core/router/routes_names.dart';
 import 'package:chat_app1/core/theme/app_styles.dart';
-import 'package:chat_app1/features/auth/presentation/views/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,6 +1,5 @@
 import 'package:chat_app1/core/router/app_router.dart';
 import 'package:chat_app1/core/utils/simple_bloc_observer.dart';
-import 'package:chat_app1/features/splash/presentation/view/splash.dart';
 import 'package:chat_app1/firebase_options.dart';
 import 'package:chat_app1/service_locator.dart';
 import 'package:firebase_core/firebase_core.dart';
