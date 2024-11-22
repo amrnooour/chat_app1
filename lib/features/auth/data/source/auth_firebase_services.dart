@@ -1,5 +1,6 @@
 import 'package:chat_app1/features/auth/data/model/user_signin.dart';
 import 'package:chat_app1/features/auth/data/model/user_signup.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -12,7 +13,7 @@ class AuthFirebaseServicesImpl extends AuthFirebaseServices {
   @override
   Future<Either> signin(UserSignin user) async {
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+       await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: user.email, password: user.password);
       return right("Signin Success");
     } on FirebaseAuthException catch (e) {
@@ -29,8 +30,18 @@ class AuthFirebaseServicesImpl extends AuthFirebaseServices {
   @override
   Future<Either> signup(UserSignup user) async {
     try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      var data = await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: user.email, password: user.password);
+      
+      FirebaseFirestore.instance
+          .collection("users")
+          .doc(data.user!.uid)
+          .set({
+            "name" : user.name,
+            "email" : user.email,
+            "phone" : user.phone
+          });
+
       return right("Signup Succesffly");
     } on FirebaseAuthException catch (e) {
       String message = "";

@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeCubit(),
+      create: (context) => HomeCubit()..getData(),
       child: BlocBuilder<HomeCubit, HomeStates>(
         builder: (context, state) => Scaffold(
           body: TabsOfBottomNav.tabs[context.read<HomeCubit>().currentIndex],
